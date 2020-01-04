@@ -23,13 +23,55 @@ class New : AppCompatActivity() {
             val teams = txtTeams.text.toString()
             val players = txtPlayers.text.toString()
 
-            if(teams.trim().length != 0 && teams.toInt() >= 2 )
+            if(teams.trim().length != 0 && teams.toInt() == 8 )
             {
-                if(players.trim().length != 0 && players.toInt() >= 2)
+                if(players.trim().length != 0 && players.toInt() == 4)
                 {
-                    val intent = Intent(this,nameSelect::class.java)
+                    val intent = Intent(this,fourPlayers::class.java)
                     intent.putExtra("teams",teams)
-                    intent.putExtra("players",players)
+                    //intent.putExtra("players",players)
+                    startActivity(intent)
+                }
+                else
+                {
+                    Toast.makeText(this,"Enter a valid number of Teams", Toast.LENGTH_SHORT).show()
+                }
+            }
+            else if(teams.trim().length != 0 && teams.toInt() == 6 )
+            {
+                if(players.trim().length != 0 && players.toInt() == 3)
+                {
+                    val intent = Intent(this,threePlayer::class.java)
+                    intent.putExtra("teams",teams)
+                    //intent.putExtra("players",players)
+                    startActivity(intent)
+                }
+                else
+                {
+                    Toast.makeText(this,"Enter a valid number of Teams", Toast.LENGTH_SHORT).show()
+                }
+            }
+            else if(teams.trim().length != 0 && teams.toInt() == 4 )
+            {
+                if(players.trim().length != 0 && players.toInt() == 4)
+                {
+                    val intent = Intent(this,fourPlayers::class.java)
+                    intent.putExtra("teams",teams)
+                    //intent.putExtra("players",players)
+                    startActivity(intent)
+                }
+                else
+                {
+                    Toast.makeText(this,"Enter a valid number of Teams", Toast.LENGTH_SHORT).show()
+                }
+            }
+            else if(teams.trim().length != 0 && teams.toInt() == 3 )
+            {
+                if(players.trim().length != 0 && players.toInt() == 3)
+                {
+                    val intent = Intent(this,threePlayer::class.java)
+                    intent.putExtra("teams",teams)
+                    //intent.putExtra("players",players)
                     startActivity(intent)
                 }
                 else
