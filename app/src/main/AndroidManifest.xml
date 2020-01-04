@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".nameSelect"></activity>
+        <activity android:name=".threeTeam"></activity>
+        <activity android:name=".fourTeam" />
+        <activity android:name=".sixTeam" />
+        <activity android:name=".eightTeam" />
+        <activity android:name=".fourPlayers" />
+        <activity android:name=".threePlayer" />
+        <activity android:name=".nameSelect" />
         <activity android:name=".New" />
         <activity android:name=".MainActivity">
             <intent-filter>
